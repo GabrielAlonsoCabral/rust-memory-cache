@@ -1,10 +1,9 @@
-use std::borrow::Cow;
 use std::io::{prelude::*, BufReader};
 use std::net::{TcpListener, TcpStream};
 use std::thread;
 
 extern crate resp;
-use resp::{encode, encode_slice, Decoder, Value};
+use resp::{Decoder, Value};
 
 fn main() {
     let host: &str = "127.0.0.1:6380";
