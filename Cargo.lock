@@ -3,5 +3,14 @@
 version = 3
 
 [[package]]
+name = "resp"
+version = "1.0.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3d276d153c2c18b622527a9118d8055e4e26530f15d616d6290b00acc7e2f6aa"
+
+[[package]]
 name = "stupid-redis"
 version = "0.1.0"
+dependencies = [
+ "resp",
+]
