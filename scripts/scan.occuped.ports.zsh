@@ -1,0 +1,1 @@
+nc -z -v 127.0.0.1 6378-6380 2>&1 | grep succeeded
