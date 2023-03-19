@@ -1,6 +1,6 @@
 use std::io::{prelude::*, BufReader};
 use std::net::{TcpListener, TcpStream};
-use stupid_redis::{MemCache, find_data_by_key};
+use rust_memory_cache::{MemCache, find_data_by_key};
 
 extern crate resp;
 use resp::{Decoder, Value};
@@ -8,7 +8,7 @@ use resp::{Decoder, Value};
 fn main() {
     let host: &str = "127.0.0.1:6379";
     let listener: TcpListener = TcpListener::bind(host).unwrap();
-    println!("Stupid redis is listening on {}\n", host);
+    println!("Rust memory cache is listening on {}\n", host);
     let mut mem_cache:Vec<MemCache>=vec![];
 
 

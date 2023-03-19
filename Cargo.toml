@@ -1,5 +1,5 @@
 [package]
-name = "stupid-redis"
+name = "rust-memory-cache"
 version = "0.1.0"
 edition = "2021"
 
